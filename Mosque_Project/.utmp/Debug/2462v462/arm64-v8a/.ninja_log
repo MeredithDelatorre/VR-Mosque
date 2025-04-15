@@ -1,0 +1,10 @@
+# ninja log v5
+1	2580	7664336167027719	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	11b3f8b68eeae2f4
+38	2604	7664336167133188	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ee450f6bd7a9a56f
+152	2606	7664336167454104	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	cf0067b0676521ac
+197	2609	7664336167388948	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c1f550ac6b1f27ec
+129	2637	7664336169306859	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5f7dbc993a7fe35
+104	2653	7664336169457311	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5f80a40e98dce12f
+243	3271	7664336175856519	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b04dedd6caa94917
+1840	3544	7664336178581900	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	aa23d3dc49e1d421
+3545	3832	7664336181425413	C:/Users/after/Documents/GitHub/VR-Mosque/Mosque_Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/2462v462/obj/arm64-v8a/libgame.so	34455f24779b2496
