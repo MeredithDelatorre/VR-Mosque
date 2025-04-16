@@ -1,0 +1,63 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl _5
+Ka 0.000000 0.000000 0.000000
+Kd 0.658824 0.450980 0.301961
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/_5.jpg
+
+newmtl _4
+Ka 0.000000 0.000000 0.000000
+Kd 0.776471 0.690196 0.576471
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/_4.jpg
+
+newmtl _6
+Ka 0.000000 0.000000 0.000000
+Kd 0.858824 0.788235 0.654902
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/_6.jpg
+
+newmtl StoneBrickWall
+Ka 0.000000 0.000000 0.000000
+Kd 0.745098 0.654902 0.521569
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/StoneBrickWall.jpg
+
+newmtl Material__1
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Fencing_Metal_Straight
+Ka 0.000000 0.000000 0.000000
+Kd 0.760784 0.764706 0.768627
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/Fencing_Metal_Straight.png
+
+newmtl Metal_Seamed
+Ka 0.000000 0.000000 0.000000
+Kd 0.462745 0.466667 0.450980
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/Metal_Seamed.jpg
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.466667 0.400000 0.356863
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/_1.jpg
+
+newmtl Brick_20_1K
+Ka 0.000000 0.000000 0.000000
+Kd 0.494118 0.427451 0.364706
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/Brick_20_1K.png
+
+newmtl Brick_05_1K
+Ka 0.000000 0.000000 0.000000
+Kd 0.698039 0.607843 0.478431
+Ks 0.330000 0.330000 0.330000
+map_Kd Mesquita+de+Córdoba_Simplified_with_Texture/Brick_05_1K.png
+
