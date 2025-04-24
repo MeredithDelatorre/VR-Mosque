@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Courtyard.unity
     guid: 117bca9f5cb00ca42a82487043cd0678
+  - enabled: 1
+    path: Assets/Scenes/Arches.unity
+    guid: 33621bb21feeb4947ab34df6e0cc79fb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ccc07c86b24c08a449aeafa7417e322a, type: 2}
