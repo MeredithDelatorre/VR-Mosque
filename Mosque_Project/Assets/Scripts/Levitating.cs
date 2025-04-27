@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class FloatAndGlow : MonoBehaviour
 {
     [Header("Floating")]
@@ -14,6 +15,7 @@ public class FloatAndGlow : MonoBehaviour
 
     private Vector3 startPos;
     private Material mat;
+    private Rigidbody rb;
 
     void Start()
     {
@@ -24,21 +26,27 @@ public class FloatAndGlow : MonoBehaviour
 
         mat.EnableKeyword("_EMISSION");
 
-        // Optional: if you're using an emission map, make sure it's set
         if (mat.GetTexture("_EmissionMap") == null)
         {
-            mat.SetTexture("_EmissionMap", mat.GetTexture("_MainTex")); // reuse main texture for emission
+            mat.SetTexture("_EmissionMap", mat.GetTexture("_MainTex"));
         }
 
         mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+
+        rb = GetComponent<Rigidbody>();
+        rb.isKinematic = true; // Make sure Rigidbody is kinematic (no physics forces)
+    }
+
+    void FixedUpdate()
+    {
+        // Floating animation
+        float floatOffset = Mathf.Sin(Time.time * floatFrequency) * floatAmplitude;
+        Vector3 nextPos = startPos + new Vector3(0f, floatOffset, 0f);
+        rb.MovePosition(nextPos);
     }
 
     void Update()
     {
-        // Floating animation
-        float floatOffset = Mathf.Sin(Time.time * floatFrequency) * floatAmplitude;
-        transform.position = startPos + new Vector3(0f, floatOffset, 0f);
-
         // Emission intensity modulation
         float emissionStrength = Mathf.Lerp(glowMin, glowMax, (Mathf.Sin(Time.time * glowFrequency) + 1f) / 2f);
         Color finalColor = glowColor * Mathf.LinearToGammaSpace(emissionStrength);
