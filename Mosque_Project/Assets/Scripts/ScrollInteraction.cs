@@ -1,29 +1,57 @@
 using UnityEngine;
-using TMPro; // Required for TextMeshPro
+using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable))]
 public class ScrollInteraction : MonoBehaviour
 {
-    [TextArea(3, 10)]
-    public string infoText;
+    [Header("Primary Panel Settings")]
+    public Canvas primaryCanvas;
+    public TextMeshProUGUI primaryText;
+    [TextArea]
+    public string primaryMessage;
 
-    public GameObject infoPanel; // Reference to inactive panel
-    public TextMeshProUGUI infoTextField;
+    [Header("Secondary Panel Settings")]
+    public TextMeshProUGUI secondaryText;
+    [TextArea]
+    public string secondaryMessage;
 
-    public void ActivateInfo()
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable interactable;
+
+    private void Awake()
     {
-        if (infoPanel != null)
-        {
-            infoPanel.SetActive(true);
+        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
+    }
 
-            if (infoTextField != null)
-            {
-                infoTextField.text = infoText;
-            }
-        }
-        else
+    private void OnEnable()
+    {
+        interactable.selectEntered.AddListener(OnSelectScroll);
+    }
+
+    private void OnDisable()
+    {
+        interactable.selectEntered.RemoveListener(OnSelectScroll);
+    }
+
+    private void OnSelectScroll(SelectEnterEventArgs args)
+    {
+        Debug.Log("✅ Scroll clicked!");
+
+        // Activate primary panel and update text
+        if (primaryCanvas != null)
         {
-            Debug.LogWarning("InfoPanel reference missing!");
+            primaryCanvas.enabled = true;
         }
-        Debug.Log("Trying to activate panel: " + infoPanel.name);
+        if (primaryText != null)
+        {
+            primaryText.text = primaryMessage;
+        }
+
+        // Activate secondary panel and update text
+        if (secondaryText != null)
+        {
+            secondaryText.text = secondaryMessage;
+        }
     }
 }
+
