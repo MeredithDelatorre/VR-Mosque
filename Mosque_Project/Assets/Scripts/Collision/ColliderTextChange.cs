@@ -1,22 +1,22 @@
 using UnityEngine;
-using TMPro;  // Needed for TextMeshPro
+using TMPro;  
 
 public class ColliderTextChange : MonoBehaviour
 {
     [Header("UI Elements")]
-    public TextMeshProUGUI panelText;    // The Text field inside your Canvas
+    public TextMeshProUGUI panelText;  
 
     [Header("New Text")]
     [TextArea]
     public string newMessage = "This is the updated message after first collision!";
 
-    private bool hasTriggered = false; // 🔥 New flag to track if it already triggered
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (!hasTriggered && other.CompareTag("Player"))
         {
-            Debug.Log("✅ Sphere collided! Updating panel text...");
+            Debug.Log("Sphere collided! Updating panel text...");
 
             if (panelText != null)
             {
@@ -24,10 +24,10 @@ public class ColliderTextChange : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("⚠️ Panel Text is not assigned in the inspector!");
+                Debug.LogWarning("⚠Panel Text is not assigned in the inspector!");
             }
 
-            hasTriggered = true; // ✅ Now block future triggers
+            hasTriggered = true;
         }
     }
 }

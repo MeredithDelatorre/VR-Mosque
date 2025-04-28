@@ -35,7 +35,7 @@ public class ScrollInteraction : MonoBehaviour
 
     private void OnSelectScroll(SelectEnterEventArgs args)
     {
-        Debug.Log("✅ Scroll clicked!");
+        Debug.Log("Scroll clicked!");
 
         // Activate primary panel and update text
         if (primaryCanvas != null)

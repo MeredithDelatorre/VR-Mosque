@@ -11,7 +11,7 @@ public class LoadSceneOnCollision : MonoBehaviour
         // Optional: Only trigger if the player collides
         if (other.CompareTag("Player"))
         {
-            Debug.Log("✅ Player collided, loading scene: " + sceneNameToLoad);
+            Debug.Log("Player collided, loading scene: " + sceneNameToLoad);
             SceneManager.LoadScene(sceneNameToLoad);
         }
     }

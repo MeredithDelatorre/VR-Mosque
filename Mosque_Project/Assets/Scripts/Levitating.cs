@@ -22,7 +22,7 @@ public class FloatAndGlow : MonoBehaviour
         startPos = transform.position;
 
         Renderer renderer = GetComponent<Renderer>();
-        mat = renderer.material; // create instance to avoid shared edits
+        mat = renderer.material;
 
         mat.EnableKeyword("_EMISSION");
 
@@ -34,7 +34,7 @@ public class FloatAndGlow : MonoBehaviour
         mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
 
         rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true; // Make sure Rigidbody is kinematic (no physics forces)
+        rb.isKinematic = true;
     }
 
     void FixedUpdate()

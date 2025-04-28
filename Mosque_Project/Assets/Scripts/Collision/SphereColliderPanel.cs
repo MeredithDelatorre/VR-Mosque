@@ -30,7 +30,7 @@ public class UpdateTextAndFadeSound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("✅ Player entered sphere!");
+            Debug.Log("Player entered sphere!");
 
             if (panelText != null)
                 panelText.text = newMessage;
@@ -50,7 +50,7 @@ public class UpdateTextAndFadeSound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("🚪 Player exited sphere.");
+            Debug.Log("Player exited sphere.");
 
             if (audioSource != null)
             {
