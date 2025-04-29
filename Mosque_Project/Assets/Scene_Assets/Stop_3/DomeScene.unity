@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 366984912}
   - component: {fileID: 366984911}
   - component: {fileID: 366984910}
+  - component: {fileID: 366984915}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -572,10 +573,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneTransitioner, Assembly-CSharp
-        m_MethodName: OnButtonClicked
-        m_Mode: 5
+      - m_Target: {fileID: 1647382962}
+        m_TargetAssemblyTypeName: PageTurner, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -592,6 +593,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366984908}
   m_CullTransparentMesh: 0
+--- !u!114 &366984915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366984908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a82115b70e86f41b403acfbcaa9081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 92167407}
+  panel: {fileID: 2102389225}
+  nextButton: {fileID: 366984913}
 --- !u!1 &400366975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1443,7 @@ GameObject:
   - component: {fileID: 1647382959}
   - component: {fileID: 1647382961}
   - component: {fileID: 1647382960}
+  - component: {fileID: 1647382962}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1473,9 +1490,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Qibla generally points towards Mecca but this one is not entirely
-    pointed towards Mecca as it was instead aligned with a road that was not pointing
-    in the direction of Mecca. '
+  m_text: 'The Qibla generally points toward Mecca; however, this one is not entirely
+    aligned with Mecca, as it was instead aligned with a road that did not point
+    in Mecca''s direction.
+
+
+    The room behind the Qibla is untraditional but serves
+    as evidence of the Muslims of Al-Andalus'' efforts to accommodate Christians
+    even in their own houses of worship.
+
+
+    If you look up, you will see the dome.
+    Its circular form represents the heavens. The dome allows a great deal of light
+    to enter, creating a sense of loftiness, lightness, and closeness to the heavens.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 73727d95c9b24d046adf07ea69b7ead2, type: 2}
   m_sharedMaterial: {fileID: 4587803331505645473, guid: 73727d95c9b24d046adf07ea69b7ead2, type: 2}
@@ -1520,7 +1547,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 5
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
@@ -1540,7 +1567,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -39.107994}
+  m_margin: {x: 4.8417206, y: -8.954479, z: -5.970459, w: -54.535004}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1554,6 +1581,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647382958}
   m_CullTransparentMesh: 1
+--- !u!114 &1647382962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647382958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a82115b70e86f41b403acfbcaa9081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1647382960}
+  panel: {fileID: 2102389225}
+  nextButton: {fileID: 366984913}
 --- !u!1 &1845232353
 GameObject:
   m_ObjectHideFlags: 0
