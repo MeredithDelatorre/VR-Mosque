@@ -123,7 +123,10 @@ https://github.com/user-attachments/assets/3d837290-0e70-4974-88a4-695dd3f57f6f
   - [Realistic Volume Profiles](https://assetstore.unity.com/packages/tools/level-design/realistic-volume-profiles-274875)  
 - **3D Models**:  
   - [Mezquita de Córdoba (SketchUp)](https://3dwarehouse.sketchup.com/model/c2f98254-e1b1-41fe-98ea-b2e8b7c75ec9/Mezquita-de-Córdoba)  
-  - [Yughues Free Palm Trees](https://assetstore.unity.com/packages/3d/vegetation/trees/yughues-free-palm-trees-13540)  
+  - [Yughues Free Palm Trees](https://assetstore.unity.com/packages/3d/vegetation/trees/yughues-free-palm-trees-13540)
+  - [Praying Man](https://sketchfab.com/3d-models/muslim-prayer-islam-salah-eb0f80a7278243b4988b159fc957bbd5)
+  - [Arches](https://www.turbosquid.com/3d-models/cordoba-hall-1555388)
+  - [Dome](https://www.fab.com/listings/47077dec-e54e-452a-9811-f20b62e2c6fa)
 - **Textures**:  
   - [25+ Free Realistic Textures](https://assetstore.unity.com/packages/2d/textures-materials/25-free-realistic-textures-nature-city-home-construction-more-240323)  
   - [Real Materials Vol.0 – Free Samples](https://assetstore.unity.com/packages/2d/textures-materials/real-materials-vol-0-free-samples-115597)  
