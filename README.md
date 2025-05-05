@@ -18,16 +18,19 @@ This VR experience is a 3D recreation of the **Mezquita de Córdoba**, built in 
 
 ## 🖼️ Gallery
 
-Scene 1: Call to Prayer
+**Scene 1: Call to Prayer**
+
 ![image](https://github.com/user-attachments/assets/84fc1a2e-7491-46a5-a22a-36cc3335a83a)
 
-Scene 2: Courtyard
+**Scene 2: Courtyard**
+
 ![image](https://github.com/user-attachments/assets/bc226f47-c45f-4e84-b9ef-8e73b8aa4faf)
 ![image](https://github.com/user-attachments/assets/ccb928be-c119-4fc5-b028-c340151f23f1)
 ![image](https://github.com/user-attachments/assets/67f1f0f0-85ca-42d1-b7f3-c0c0223618cd)
 ![image](https://github.com/user-attachments/assets/bfd1c561-5c42-4db4-b0fa-28e6a9d68eff)
 
-Scene 3: Prayer Hall & Dome
+**Scene 3: Prayer Hall & Dome**
+
 ![image](https://github.com/user-attachments/assets/b79a3e63-c1b5-43cf-aab7-c793ace307d4)
 ![image](https://github.com/user-attachments/assets/9e2439af-4f9c-42ab-ac3e-ea12bd873122)
 ![image](https://github.com/user-attachments/assets/73a1fe43-3ec6-493e-8530-9afb22615732)
